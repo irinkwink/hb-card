@@ -95,6 +95,12 @@ ul {
   font-size: 18px;
   color: #FFFFFF;
   margin-right: 30px;
+
+}
+
+.header__button-change:hover {
+  outline: 1px solid #ffffff;
+  outline-offset: -3px;
 }
 
 .men .header__button-change {
@@ -130,12 +136,20 @@ ul {
   background-image: url('../img/men.svg');
 }
 
+.header__button-gender_men:hover {
+  border-color:#1178B2;
+}
+
 .men .header__button-gender_men {
   border-color:#1178B2;
 }
 
 .header__button-gender_women {
   background-image: url('../img/women.svg');
+}
+
+.header__button-gender_women:hover {
+  border-color: #C300C7;
 }
 
 .women .header__button-gender_women {
@@ -202,7 +216,10 @@ ul {
 .footer__social {
   display: flex;
   gap: 16px;
-  
+}
+
+.footer__link svg:hover {
+  scale: 1.2;
 }
 
 .men .footer__link {
@@ -215,6 +232,8 @@ ul {
 
 
 
+
+
 @media (max-width: 880px) {
   .container {
     padding: 0 10px;
@@ -223,7 +242,7 @@ ul {
   .header__button-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px 30px;
   }
 
   .header__button-change {
